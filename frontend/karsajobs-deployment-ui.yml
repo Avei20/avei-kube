@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: karsajobs-ui
-          image: robertheo/karsajobs-ui:latest
+          image: avei/frontend-karsajob:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8000

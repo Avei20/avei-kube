@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   name: karsajobs-backend
   labels:
-    app: karsajobs
-    tier: backend
+    app: karsajobs-be
+    # tier: backend
 spec:
   replicas: 1
   selector:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: karsajobs
-          image: robertheo/karsajobs:latest
+          image: avei/backend-karsajob:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080

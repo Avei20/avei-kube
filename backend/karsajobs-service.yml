@@ -4,7 +4,7 @@ metadata:
   name: karsajobs-service
   labels:
     app: karsajobs
-    tier: backend
+    # tier: backend
 spec:
   type: NodePort
   ports:
@@ -12,4 +12,5 @@ spec:
     protocol: TCP
     nodePort: 31943
   selector:
-    tier: backend
+    app: karsajobs
+    # tier: backend

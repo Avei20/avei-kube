@@ -3,8 +3,8 @@ kind: Service
 metadata:
   name: karsajobs-ui-service
   labels:
-    app: karsajobs-ui
-    tier: frontend
+    app: karsajobs-frontend
+    # tier: frontend
 spec:
   type: NodePort
   ports:
@@ -12,4 +12,5 @@ spec:
     protocol: TCP
     nodePort: 31944
   selector:
-    tier: frontend
+    app: karsajobs-frontend
+    # tier: frontend
