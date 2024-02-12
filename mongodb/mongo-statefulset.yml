@@ -8,13 +8,13 @@ spec:
   minReadySeconds: 10
   selector:
     matchLabels:
-      app: database
-      selector: mongodb
+      app: mongo
+      # selector: mongodb
   template:
     metadata:
       labels:
-        app: database
-        selector: mongodb
+        app: mongo
+        # selector: mongodb
     spec:
       containers:
         - name: mongo
